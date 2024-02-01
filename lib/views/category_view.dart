@@ -20,7 +20,7 @@ class CategoryViews extends StatelessWidget {
         ),
       ),
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 15),
+        padding: const EdgeInsets.symmetric(horizontal: 16),
         child: CustomScrollView(
           physics: const BouncingScrollPhysics(),
           slivers: [
