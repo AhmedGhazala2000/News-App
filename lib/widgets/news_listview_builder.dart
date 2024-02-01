@@ -24,7 +24,7 @@ class _NewsListViewBuilderState extends State<NewsListViewBuilder> {
 
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder<List<ArticlesModels>>(
+    return FutureBuilder<List<ArticlesModel>>(
       future: getDataFuture,
       builder: (context, snapshot) {
         if (snapshot.hasData) {
