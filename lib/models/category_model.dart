@@ -1,7 +1,7 @@
+class CategoryModel {
+  final String categoryAssetImage;
+  final String categoryName;
 
-class CategoryModel{
-  String categoryAssetImage;
-  String categoryName;
-
-  CategoryModel({required this.categoryAssetImage, required this.categoryName});
+  const CategoryModel(
+      {required this.categoryAssetImage, required this.categoryName});
 }

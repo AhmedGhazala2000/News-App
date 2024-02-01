@@ -18,6 +18,7 @@ class HomeView extends StatelessWidget {
             Text(
               'News',
               style: TextStyle(
+                color: Colors.black,
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
               ),
@@ -44,11 +45,12 @@ class HomeView extends StatelessWidget {
                 height: 30,
               ),
             ),
-            const NewsListViewBuilder(category: 'News',),
+            const NewsListViewBuilder(
+              category: 'News',
+            ),
           ],
         ),
       ),
     );
   }
 }
-
