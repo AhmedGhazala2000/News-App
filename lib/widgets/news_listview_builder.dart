@@ -36,7 +36,7 @@ class _NewsListViewBuilderState extends State<NewsListViewBuilder> {
           return const SliverToBoxAdapter(
             child: Center(
               child: Text(
-                'Oops there was an error, try later!',
+                'There was an error, please try later !',
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
               ),
             ),
