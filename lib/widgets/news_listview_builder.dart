@@ -13,8 +13,7 @@ class NewsListViewBuilder extends StatefulWidget {
 }
 
 class _NewsListViewBuilderState extends State<NewsListViewBuilder> {
-  // ignore: prefer_typing_uninitialized_variables
-  var getDataFuture;
+  late Future<List<ArticlesModel>> getDataFuture;
 
   @override
   void initState() {
@@ -31,8 +30,7 @@ class _NewsListViewBuilderState extends State<NewsListViewBuilder> {
           return NewsListView(
             articlesList: snapshot.data!,
           );
-        }
-        else if (snapshot.hasError) {
+        } else if (snapshot.hasError) {
           return const SliverToBoxAdapter(
             child: Center(
               child: Text(
@@ -41,8 +39,7 @@ class _NewsListViewBuilderState extends State<NewsListViewBuilder> {
               ),
             ),
           );
-        }
-        else {
+        } else {
           return const SliverToBoxAdapter(
             child: Center(
               child: CircularProgressIndicator(),
