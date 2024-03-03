@@ -1,5 +1,7 @@
 import 'package:news_app/models/category_model.dart';
 
+const double smallDeviceSize = 900;
+
 const List<CategoryModel> categories = [
   CategoryModel(
       categoryAssetImage: 'assets/business.jpg', categoryName: 'Business'),

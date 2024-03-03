@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_app/utils/responsive_font_size.dart';
 import 'package:news_app/widgets/news_listview_builder.dart';
 
 class CategoryViews extends StatelessWidget {
@@ -15,8 +16,10 @@ class CategoryViews extends StatelessWidget {
         centerTitle: true,
         title: Text(
           '$categoryName News',
-          style: const TextStyle(
-              fontSize: 22, fontWeight: FontWeight.bold, color: Colors.black54),
+          style: TextStyle(
+              fontSize: getResponsiveFontSize(context, fontSize: 22),
+              fontWeight: FontWeight.bold,
+              color: Colors.black54),
         ),
       ),
       body: Padding(

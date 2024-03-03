@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/models/category_model.dart';
+import 'package:news_app/utils/responsive_font_size.dart';
 import 'package:news_app/views/category_view.dart';
 
 class Category extends StatelessWidget {
@@ -14,9 +15,10 @@ class Category extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-              builder: (context) => CategoryViews(
-                    categoryName: category.categoryName,
-                  )),
+            builder: (context) => CategoryViews(
+              categoryName: category.categoryName,
+            ),
+          ),
         );
       },
       child: Container(
@@ -28,14 +30,14 @@ class Category extends StatelessWidget {
           ),
           borderRadius: BorderRadius.circular(10),
         ),
-        height: 100,
-        width: 190,
+        height: getResponsiveFontSize(context, fontSize: 100),
+        width: getResponsiveFontSize(context, fontSize: 190),
         alignment: Alignment.center,
         child: Text(
           category.categoryName,
-          style: const TextStyle(
+          style: TextStyle(
             color: Colors.white,
-            fontSize: 18,
+            fontSize: getResponsiveFontSize(context, fontSize: 18),
             fontWeight: FontWeight.bold,
           ),
         ),

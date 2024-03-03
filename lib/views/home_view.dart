@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_app/utils/responsive_font_size.dart';
 import 'package:news_app/widgets/category_listview.dart';
 import 'package:news_app/widgets/news_listview_builder.dart';
 
@@ -12,14 +13,14 @@ class HomeView extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
         centerTitle: true,
-        title: const Row(
+        title: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
               'News',
               style: TextStyle(
                 color: Colors.black,
-                fontSize: 24,
+                fontSize: getResponsiveFontSize(context, fontSize: 24),
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -27,7 +28,7 @@ class HomeView extends StatelessWidget {
               'Cloud',
               style: TextStyle(
                 color: Colors.orange,
-                fontSize: 24,
+                fontSize: getResponsiveFontSize(context, fontSize: 24),
                 fontWeight: FontWeight.bold,
               ),
             ),

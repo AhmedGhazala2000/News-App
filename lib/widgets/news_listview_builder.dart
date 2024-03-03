@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/models/articles_model.dart';
 import 'package:news_app/services/news_service.dart';
+import 'package:news_app/utils/responsive_font_size.dart';
 import 'package:news_app/widgets/news_listview.dart';
 
 class NewsListViewBuilder extends StatefulWidget {
@@ -31,11 +32,14 @@ class _NewsListViewBuilderState extends State<NewsListViewBuilder> {
             articlesList: snapshot.data!,
           );
         } else if (snapshot.hasError) {
-          return const SliverToBoxAdapter(
+          return SliverToBoxAdapter(
             child: Center(
               child: Text(
                 'There was an error, please try later !',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: getResponsiveFontSize(context, fontSize: 16),
+                ),
               ),
             ),
           );
