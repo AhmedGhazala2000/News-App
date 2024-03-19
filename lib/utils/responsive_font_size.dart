@@ -4,8 +4,8 @@ import 'package:news_app/constant.dart';
 double getResponsiveFontSize(BuildContext context, {required double fontSize}) {
   double scaleFactor = getScaleFactor(context);
   double responsiveFontSize = fontSize * scaleFactor;
-  double lowerLimit = responsiveFontSize * 0.8;
-  double upperLimit = responsiveFontSize * 1.2;
+  double lowerLimit = fontSize * 0.8;
+  double upperLimit = fontSize * 1.2;
   return responsiveFontSize.clamp(lowerLimit, upperLimit);
 }
 

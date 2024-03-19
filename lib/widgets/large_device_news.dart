@@ -24,7 +24,7 @@ class LargeDeviceNews extends StatelessWidget {
                 borderRadius: BorderRadius.circular(8),
                 child: article.image == null
                     ? Image.asset(
-                        'assets/News.jpg',
+                        'assets/images/News.jpg',
                         width: screenWidth,
                         fit: BoxFit.fill,
                       )
