@@ -20,5 +20,5 @@ const List<CategoryModel> categories = [
       categoryAssetImage: 'assets/images/entertainment.png',
       categoryName: 'Entertainment'),
   CategoryModel(
-      categoryAssetImage: 'assets/general.jpg', categoryName: 'General'),
+      categoryAssetImage: 'assets/images/general.jpg', categoryName: 'General'),
 ];
